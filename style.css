@@ -1,0 +1,649 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f1eb;
+    padding: 45px;
+    color: #111;
+}
+
+/* MAIN BOX GRID */
+
+.travel-grid {
+    width: 1100px;
+    max-width: 100%;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    grid-template-rows:
+        190px
+        190px
+        190px
+        190px;
+
+    gap: 18px;
+}
+
+
+/* ALL BOXES */
+
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+
+    border: 1px solid rgba(0,0,0,0.04);
+}
+
+
+/* =========================
+   GREEN BOX
+========================= */
+
+.plan-card {
+    grid-column: 1;
+    grid-row: 1 / 3;
+
+    background: #d9f3e7;
+
+    padding: 32px;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.plan-card h2 {
+    margin-top: 45px;
+
+    font-size: 36px;
+    line-height: .95;
+}
+
+.plan-card h2 span {
+    color: #087f5b;
+    font-style: italic;
+}
+
+.plan-card button {
+    margin-top: 30px;
+
+    padding: 15px 24px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: #ffca5c;
+
+    color: #513eb5;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.plane {
+    position: absolute;
+
+    right: 40px;
+    bottom: 35px;
+
+    font-size: 30px;
+}
+
+
+/* =========================
+   BIG PURPLE BOX
+========================= */
+
+.hero-card {
+    grid-column: 2 / 4;
+    grid-row: 1;
+
+    background: #7250dc;
+
+    color: white;
+
+    padding: 35px 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-card h1 {
+    font-size: 48px;
+    line-height: .92;
+
+    margin-top: 12px;
+}
+
+.hero-card h1 span {
+    color: #ffd05e;
+    font-style: italic;
+}
+
+.label {
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.hero-description {
+    margin-top: 15px;
+
+    font-size: 13px;
+
+    max-width: 350px;
+
+    line-height: 1.4;
+}
+
+.rating {
+    color: #ffd05e;
+
+    font-size: 22px;
+
+    margin-top: 15px;
+}
+
+.travelers {
+    font-size: 11px;
+}
+
+.hero-icon {
+    font-size: 80px;
+}
+
+
+/* =========================
+   PURPLE WEATHER BOX
+========================= */
+
+.weather-card {
+    grid-column: 4;
+    grid-row: 1 / 4;
+
+    background: #dcd1ff;
+
+    padding: 30px;
+}
+
+.weather-card h2 {
+    font-size: 30px;
+    line-height: .95;
+}
+
+.weather-box {
+    background: #ffffff;
+
+    border-radius: 16px;
+
+    padding: 20px;
+
+    margin-top: 25px;
+}
+
+.weather-top {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.temperature {
+    font-size: 42px;
+    font-weight: bold;
+
+    margin-top: 8px;
+}
+
+.weather-box p {
+    font-size: 11px;
+    color: #777;
+}
+
+.weather-days {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 20px;
+}
+
+.weather-days div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+
+    text-align: center;
+
+    font-size: 12px;
+}
+
+.weather-days b {
+    font-size: 8px;
+    color: #777;
+}
+
+.small-text {
+    margin-top: 20px;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================
+   YELLOW BOX
+========================= */
+
+.explore-card {
+    grid-column: 1;
+    grid-row: 3 / 5;
+
+    background: #ffd36b;
+
+    padding: 30px;
+}
+
+.explore-card h2 {
+    font-size: 31px;
+    line-height: .92;
+}
+
+.explore-card h2 span {
+    color: #614bd3;
+    font-style: italic;
+}
+
+.destination {
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 10px;
+
+    margin-top: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.destination-image {
+    width: 48px;
+    height: 48px;
+
+    background: #eeeeee;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+}
+
+.destination b {
+    font-size: 12px;
+}
+
+.destination p {
+    font-size: 9px;
+    color: #777;
+}
+
+
+/* =========================
+   WHITE BOX
+========================= */
+
+.booking-card {
+    grid-column: 2;
+    grid-row: 2;
+
+    background: #ffffff;
+
+    padding: 28px;
+}
+
+.booking-icons {
+    display: flex;
+    gap: 8px;
+}
+
+.booking-icons span {
+    width: 38px;
+    height: 38px;
+
+    background: #ffe08b;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.booking-card h2 {
+    margin-top: 20px;
+
+    font-size: 27px;
+
+    line-height: .95;
+}
+
+.booking-card p {
+    margin-top: 12px;
+
+    font-size: 11px;
+
+    color: #777;
+}
+
+
+/* =========================
+   BLUE BOX
+========================= */
+
+.packing-card {
+    grid-column: 3;
+    grid-row: 2;
+
+    background: #ccecff;
+
+    padding: 28px;
+}
+
+.packing-card h2 {
+    font-size: 27px;
+
+    line-height: .95;
+}
+
+.packing-card h2 span {
+    color: #4d40bd;
+
+    font-style: italic;
+}
+
+.packing-list {
+    margin-top: 18px;
+
+    background: white;
+
+    padding: 10px;
+
+    border-radius: 12px;
+}
+
+.packing-list div {
+    font-size: 9px;
+
+    padding: 5px;
+
+    border-bottom: 1px solid #eee;
+}
+
+.packing-list div:last-child {
+    border-bottom: none;
+}
+
+.packing-list span {
+    color: #159a67;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   PINK BOX
+========================= */
+
+.stats-card {
+    grid-column: 2;
+    grid-row: 3;
+
+    background: #ffdce8;
+
+    padding: 28px;
+}
+
+.stats-number {
+    font-size: 50px;
+
+    font-weight: bold;
+}
+
+.stats-card p {
+    font-size: 13px;
+
+    color: #555;
+}
+
+.flags {
+    margin-top: 18px;
+
+    font-size: 25px;
+}
+
+
+/* =========================
+   LARGE GREEN BOX
+========================= */
+
+.memories-card {
+    grid-column: 2 / 4;
+    grid-row: 4;
+
+    background: #16a985;
+
+    color: white;
+
+    padding: 24px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.trip-chart {
+    width: 48%;
+
+    height: 145px;
+
+    background: white;
+
+    color: #111;
+
+    border-radius: 14px;
+
+    padding: 18px;
+}
+
+.trip-chart p {
+    font-size: 10px;
+
+    color: #777;
+}
+
+.trip-chart strong {
+    font-size: 30px;
+
+    display: inline-block;
+
+    margin-top: 5px;
+}
+
+.growth {
+    background: #d3f5e2;
+
+    color: #16875a;
+
+    font-size: 8px;
+
+    padding: 4px 7px;
+
+    border-radius: 10px;
+}
+
+.bars {
+    height: 60px;
+
+    display: flex;
+
+    align-items: end;
+
+    justify-content: space-around;
+
+    margin-top: 8px;
+}
+
+.bars span {
+    width: 14px;
+
+    background: #16a985;
+
+    border-radius: 8px 8px 0 0;
+}
+
+.memory-text {
+    width: 45%;
+}
+
+.memory-text h2 {
+    font-size: 33px;
+
+    line-height: .92;
+}
+
+.memory-text em {
+    color: #ffd05e;
+
+    font-style: italic;
+}
+
+.memory-text button {
+    margin-top: 15px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    padding: 11px 18px;
+
+    background: #ffd05e;
+
+    color: #5140bd;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   HOVER EFFECT
+========================= */
+
+.card {
+    transition: transform .25s ease,
+                box-shadow .25s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.10);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    body {
+        padding: 25px;
+    }
+
+    .travel-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .plan-card,
+    .hero-card,
+    .weather-card,
+    .explore-card,
+    .booking-card,
+    .packing-card,
+    .stats-card,
+    .memories-card {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .hero-card,
+    .memories-card {
+        grid-column: span 2;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .travel-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-card,
+    .memories-card {
+        grid-column: auto;
+    }
+
+    .hero-icon {
+        display: none;
+    }
+
+    .hero-card h1 {
+        font-size: 42px;
+    }
+
+    .memories-card {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .trip-chart,
+    .memory-text {
+        width: 100%;
+    }
+}
